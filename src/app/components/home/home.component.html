@@ -1,0 +1,131 @@
+<div class="ui inverted dimmer" [class.active]='loading'>
+  <div class="ui large text loader">Loading....</div>
+</div>
+
+<div class="jumbotron bg-light text-center jumbotron-fluid">
+    <div class="container">
+        <!-- <h1 class="display-4" style="font-size:60px; font-family:cursive;">CoronaVirus Tracker</h1> -->
+        <img class= "image" src="../../../assets/images/home-img.png" alt="Card image cap" style="width: 100%; height: 10% !important;">
+        <hr>
+        <app-dashboard-cards
+            [totalConfirmed]='totalConfirmed'
+            [totalActive]='totalActive'
+            [totalRecovered]='totalRecovered'
+            [totalDeaths]='totalDeaths'>
+        </app-dashboard-cards>
+    </div>
+</div>
+
+<!-- below code is for checkbox at home tab -->
+
+<div class="ui form">
+    <div class="inline fields">
+        <label for="coronavirus" style="margin-left: 27%; font-size: 15px;">Select Cases:</label>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <input
+                    type="radio"
+                    value="c"
+                    id="c"
+                    #c (click)="getcasedata(c)"
+                    name="coronavirus"
+                    checked=""
+                    tabindex="0"
+                    class="hidden"/>
+                <!-- </input> -->
+                <label for="c">Confirmed Cases</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <input
+                    type="radio"
+                    value="a"
+                    id="a"
+                    #a (click)="getcasedata(a)"
+                    name="coronavirus"
+                    tabindex="0"
+                    class="hidden"/>
+                <!-- </input> -->
+                <label for="a">Active Cases</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <input
+                    type="radio"
+                    value="r"
+                    id="r"
+                    #r (click)="getcasedata(r)"
+                    name="coronavirus"
+                    tabindex="0"
+                    class="hidden"/>
+                <!-- </input> -->
+                <label for="r">Recovered Cases</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui radio checkbox">
+                <input
+                    type="radio"
+                    value="d"
+                    id="d"
+                    #d (click)="getcasedata(d)"
+                    name="coronavirus"
+                    tabindex="0"
+                    class="hidden"/>
+                <!-- </input> -->
+                <label for="d">Death Cases</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- below code is for applying horizontal line only -->
+<h3 style="text-align: center; font-family: cursive; font-weight: bold; margin-top: 50px; font-size: 18px;" >Different Graphical Representations of CoronaVirus Cases</h3>
+
+<!-- below code is for applying google charts  -->
+<div class="start" style="margin-top: 50px;">
+  <div class="row">
+
+      <div class="col">
+        <h4 style="text-align: center; font-weight: bold;">Pie-Chart</h4>
+        <google-chart
+            [type]='chart.PieChart.chartType'
+            [options]='chart.PieChart.options'
+            [data]='datatable'
+            [dynamicResize]= 'chart.PieChart.dynamicResize'
+            style="width:100%">
+        </google-chart>
+      </div>
+
+    <hr>
+    <hr style="width: 1px; height: 580px; background: black; border: none;" />
+
+    <div class="col">
+        <h4 style="text-align: center; font-weight: bold;">Column-Chart</h4>
+        <google-chart style="width: 100px"
+            [type]="chart.ColumnChart.chartType"
+            [options]='chart.ColumnChart.options'
+            [dynamicResize]= 'chart.ColumnChart.dynamicResize'
+            [data]='datatable'
+            style="width:100%">
+        </google-chart>
+      </div>
+
+  </div>
+    <h4 style="text-align: center; font-weight: bold;">Geo-Map</h4>
+    <google-chart
+        [type]="chart.GeoChart.chartType"
+        [options]='chart.GeoChart.options'
+        [dynamicResize]= 'chart.GeoChart.dynamicResize'
+        [data]='datatable'
+        style="width:100%">
+    </google-chart>
+
+</div>
+
+
+<!-- below code is for geo map chart -->
+
+

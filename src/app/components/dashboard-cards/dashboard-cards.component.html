@@ -1,0 +1,53 @@
+<div class="row ">
+  <!-- <div class="card col p-3 m-1 ">
+      <div class="ui statistic">
+          <div class="label">
+              <h3>Total Infected Cases</h3>
+          </div>
+          <div class="value">
+              {{totalConfirmed}}
+          </div>
+      </div>
+  </div> -->
+  <div class="card-deck">
+    <div class="card border-primary mb-3" style="max-width:22rem; max-height: 25rem;">
+      <img class="card-img-top" src="../../../assets/images/Infected-logo.png" alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title text-primary  " style="font-weight: bolder; ">Total Infected Cases</h1>
+        <h3 class="text-primary">{{now | date:"medium"}}</h3>
+        <div class="card-body text-primary" >
+          <h5 class="card-title" style="font-weight: bolder; font-size: 287%;"> {{totalConfirmed}}</h5>
+        </div>
+      </div>
+    </div>
+    <div class="card border-warning mb-3" style="max-width: 22rem; max-height: 25rem;">
+      <img class="card-img-top" src="../../../assets/images/Active-logo.png" alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title text-warning  " style="font-weight: bold; ">Total Active Cases</h1>
+        <h3 class="text-warning">{{now | date:"medium"}}</h3>
+        <div class="card-body text-warning" >
+          <h5 class="card-title" style="font-weight: bolder; font-size: 287%;"> {{totalConfirmed}}</h5>
+        </div>
+      </div>
+    </div>
+    <div class="card border-success mb-3" style="max-width: 22rem; max-height: 25rem">
+      <img class="card-img-top" src="../../../assets/images/Recovered-logo.png" alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title text-success  " style="font-weight: bold; ">Total Recovered Cases</h1>
+        <h3 class="text-success ">{{now | date:"medium"}}</h3>
+        <div class="card-body text-success" >
+          <h5 class="card-title" style="font-weight: bolder; font-size: 287%;"> {{totalConfirmed}}</h5>
+        </div>
+      </div>
+    </div>
+    <div class="card border-danger mb-3" style="max-width: 22rem; max-height: 25rem">
+      <img class="card-img-top" src="../../../assets/images/Death-logo.png" alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title text-danger  " style="font-weight: bold; ">Total Death Cases</h1>
+        <h3 class="text-danger ">{{now | date:"medium"}}</h3>
+        <div class="card-body text-danger" >
+          <h5 class="card-title" style="font-weight: bolder; font-size: 287%;"> {{totalConfirmed}}</h5>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+/* .card {
+  margin: 0 2% !important; */
+  /* background-color: rgb(232, 227, 227) !important; */
+  /* text-align: center;
+  border-radius: 10% !important;
+  align-items: center;
+}
+@media(max-width: 770px) {
+  .card {
+      margin: 2% 0 !important;
+  }
+} */
+.card-deck {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 1px; /* Added */
+  /* border-radius: 200% !important; */
+}
+.card{
+    border-radius: 5% !important;
+}
+.card-img-top{
+  align-items: center !important;
+  width: 60%;
+  margin-left: 60px;
+}
