@@ -55,20 +55,20 @@ export class HomeComponent implements OnInit {
     this.globalData.forEach(cs => {
       let value: number;
       if (caseType == 'c') {
-        if (cs.confirmed > 20000) {
+        if (cs.confirmed > 2000) {
           value = cs.confirmed
         }
       }
       if (caseType == 'a') {
-        if (cs.active > 20000) {
+        if (cs.active > 2000) {
           value = cs.active
         }
       } if (caseType == 'r') {
-        if (cs.recovered > 20000) {
+        if (cs.recovered > 2000) {
           value = cs.recovered
         }
       } if (caseType == 'd') {
-        if (cs.deaths > 20000) {
+        if (cs.deaths > 2000) {
           value = cs.deaths
         }
       }
