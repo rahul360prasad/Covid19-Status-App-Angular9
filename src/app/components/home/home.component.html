@@ -5,7 +5,7 @@
 <div class="jumbotron bg-light text-center jumbotron-fluid">
     <div class="container">
         <!-- <h1 class="display-4" style="font-size:60px; font-family:cursive;">CoronaVirus Tracker</h1> -->
-        <img class= "image" src="assets/images/main-home-logo.png" alt="Card image cap" style="width: 100%; height: 10% !important;">
+        <img class= "image" src="assets/images/main-home-logo.png" alt="Card image cap" style="width: 100%; height: 100% !important;">
         <hr>
         <app-dashboard-cards
             [totalConfirmed]='totalConfirmed'
@@ -86,7 +86,7 @@
 
 <!-- below code is for applying google charts  -->
 <div class="start" style="margin-top: 50px;">
-  <div class="row">
+  <!-- <div class="row"> -->
 
       <div class="col">
         <h4 style="text-align: center; font-weight: bold;">Pie-Chart</h4>
@@ -100,7 +100,7 @@
       </div>
 
     <hr>
-    <hr style="width: 1px; height: 580px; background: black; border: none;" />
+    <!-- <hr style="width: 1px; height: 580px; background: black; border: none;" /> -->
 
     <div class="col">
         <h4 style="text-align: center; font-weight: bold;">Column-Chart</h4>
@@ -113,7 +113,7 @@
         </google-chart>
       </div>
 
-  </div>
+  <!-- </div> -->
     <h4 style="text-align: center; font-weight: bold;">Geo-Map</h4>
     <google-chart
         [type]="chart.GeoChart.chartType"
