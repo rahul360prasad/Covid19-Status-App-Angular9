@@ -1,6 +1,9 @@
 I made the responsive CoronaVirus Tracker Web Application in Angular 9 with various dependencies availabel in package.json file.
 I also hosted this project on my GitHub account.
 
+                      Below is my project link:
+    https://rahul360prasad.github.io/Covid19-Status-App-Angular9/
+
 Note:- 
 There are some important commands for and for if deployment is successful but the application is not open,      shows blank page then the fault is in index.html file <base href="/"> in this tag.
         Change this tag into <base href="./"> format only the "." is missing before forward slash.
@@ -11,7 +14,7 @@ There are some important commands for and for if deployment is successful but th
         2. git commit -m "first commit"
         3. git push -u origin master
         4. ng deploy
-        
+
 Below are some ScreenShot of my Project::
 ![Screenshot_2020-07-20 CoronaAngularTracker](https://user-images.githubusercontent.com/65440053/87959772-093a1b00-cad1-11ea-889d-f11ed3fbef24.png)
 ![Screenshot_2020-07-20 CoronaAngularTracker(1)](https://user-images.githubusercontent.com/65440053/87959764-063f2a80-cad1-11ea-9621-dfd9a0db2e28.png)
