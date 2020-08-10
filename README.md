@@ -17,7 +17,7 @@ There are some important commands for and for if deployment is successful but th
 
 Below are some ScreenShot of my Project::
 ![Screenshot_2020-08-10 CoronaAngularTracker](https://user-images.githubusercontent.com/65440053/89759129-1a41df00-db07-11ea-8fec-f6c2cad85af4.png)
-![Screenshot_2020-08-10 CoronaAngularTracker(1)](https://user-images.githubusercontent.com/65440053/89759147-2332b080-db07-11ea-95d9-fb9acc32906a.png)
+![Screenshot_2020-08-10 CoronaAngularTracker(2)](https://user-images.githubusercontent.com/65440053/89762135-70b21c00-db0d-11ea-91e1-8cbdc0dba9a8.png)
 ![Screenshot_2020-07-20 CoronaAngularTracker(2)](https://user-images.githubusercontent.com/65440053/87959779-0b9c7500-cad1-11ea-9e8a-c72bc7f62880.png)
 
 For any Queries contact me via gmail: rahulprasad8380@gmail.com
